@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": 2
+    },
+    "DESIGN_NAME": "snake_game",
+    "VERILOG_FILES": ["dir::src/*.v"],
+    "PDN_SKIPTRIM": true,
+    "CLOCK_PERIOD": 40,
+    "CLOCK_PORT": "clk",
+    "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    "GRT_ALLOW_CONGESTION": true,
+    "PL_TARGET_DENSITY_PCT": 50,
+    "FP_CORE_UTIL": 50,
+    "DRT_THREADS": 8,
+    "PDN_MULTILAYER": false,
+    "RT_MAX_LAYER": "met4",
+    "SYNTH_STRATEGY": "AREA 0",
+
+    "IO_PIN_V_LENGTH":2, 
+    "IO_PIN_H_LENGTH":2,
+    
+    "DECAP_CELLS": [
+    "sky130_fd_sc_hd__decap_3",
+    "sky130_fd_sc_hd__decap_4",
+    "sky130_fd_sc_hd__decap_6",
+    "sky130_fd_sc_hd__decap_8",
+    "sky130_ef_sc_hd__decap_12"
+    ],
+    "//": "reduce wasted space",
+    "TOP_MARGIN_MULT": 1,
+    "BOTTOM_MARGIN_MULT": 1,
+    "LEFT_MARGIN_MULT": 6,
+    "RIGHT_MARGIN_MULT": 6
+    
+}
+
+
